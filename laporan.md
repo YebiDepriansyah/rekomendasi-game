@@ -188,7 +188,7 @@ Untuk rekomendasi, saya memilih satu user secara acak, kemudian memprediksi rati
   Rekomendasi 5 game paling mirip dengan "Metal Punch" beserta skor similarity.
 
 - **Collaborative Filtering:**
-  
+  https://github.com/YebiDepriansyah/rekomendasi-game/issues/1#issue-3106932186
   Rekomendasi 10 game yang diprediksi paling disukai oleh user tertentu berdasarkan model embedding, beserta 5 game favorit yang sudah dimainkan user tersebut.
 
 ---
