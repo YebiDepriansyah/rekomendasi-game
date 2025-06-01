@@ -183,12 +183,15 @@ Untuk rekomendasi, saya memilih satu user secara acak, kemudian memprediksi rati
 ### Output Top-N Recommendation
 
 - **Content-based Filtering:**
+  
   ![image](https://github.com/user-attachments/assets/989038d4-b7c0-4d43-9e35-5b342ca68ae6)
   
   Rekomendasi 5 game paling mirip dengan "Metal Punch" beserta skor similarity.
 
 - **Collaborative Filtering:**
-  https://github.com/YebiDepriansyah/rekomendasi-game/issues/1#issue-3106932186
+  
+  ![image](https://github.com/user-attachments/assets/1a575401-dad8-43c9-ab9c-eb154f263c0d)
+
   Rekomendasi 10 game yang diprediksi paling disukai oleh user tertentu berdasarkan model embedding, beserta 5 game favorit yang sudah dimainkan user tersebut.
 
 ---
