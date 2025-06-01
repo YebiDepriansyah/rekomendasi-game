@@ -142,7 +142,9 @@ Tahapan-tahapan data preparation di atas dilakukan untuk memastikan data yang di
 
 ## Modeling
 
-Pada tahap ini, saya membangun dua sistem rekomendasi dengan pendekatan yang berbeda, yaitu Content-based Filtering dan Collaborative Filtering, untuk menyelesaikan permasalahan rekomendasi game.
+Pada tahap ini, saya membangun dua sistem rekomendasi dengan pendekatan berbeda, yaitu Content-Based Filtering dan Collaborative Filtering, untuk menyelesaikan permasalahan rekomendasi game secara efektif dan komprehensif.
+
+---
 
 ### 1. Content-based Filtering
 
@@ -182,22 +184,52 @@ Untuk rekomendasi, saya memilih satu user secara acak, kemudian memprediksi rati
 
 ### Output Top-N Recommendation
 
-- **Content-based Filtering:**
-  
-  ![image](https://github.com/user-attachments/assets/989038d4-b7c0-4d43-9e35-5b342ca68ae6)
-  
-  Rekomendasi 5 game paling mirip dengan "Metal Punch" beserta skor similarity.
+#### Content-Based Filtering
 
-- **Collaborative Filtering:**
-  
-  ![image](https://github.com/user-attachments/assets/1a575401-dad8-43c9-ab9c-eb154f263c0d)
+Rekomendasi 5 game paling mirip dengan "Metal Punch" berdasarkan kemiripan konten:
 
-  Rekomendasi 10 game yang diprediksi paling disukai oleh user tertentu berdasarkan model embedding, beserta 5 game favorit yang sudah dimainkan user tersebut.
+![Content-Based Filtering](https://github.com/user-attachments/assets/989038d4-b7c0-4d43-9e35-5b342ca68ae6)
+
+| Rank | Game Name                  | Similarity Score |
+|------|----------------------------|------------------|
+| 1    | 人形限界                    | 1.000000         |
+| 2    | How I Escaped Futa Prison  | 0.999996         |
+| 3    | Zarlor Mercenary           | 0.999833         |
+| 4    | Electrocop                 | 0.999827         |
+| 5    | Half Alive                 | 0.999564         |
 
 ---
 
-Dengan dua pendekatan ini, sistem rekomendasi dapat memberikan pilihan yang baik antara rekomendasi berdasarkan karakteristik game dan preferensi pengguna secara individual.
+#### Collaborative Filtering
 
+Rekomendasi untuk User ID: 76561198419620864 berdasarkan model embedding:
+
+![Collaborative Filtering](https://github.com/user-attachments/assets/1a575401-dad8-43c9-ab9c-eb154f263c0d)
+
+Game dengan rating tinggi dari user:
+- War Mines: WW2
+
+Top-10 Game Rekomendasi:
+
+1. Tales of Kenzera™: ZAU  
+2. Ages of Conflict: World War Simulator  
+3. The Last Campfire  
+4. Super Mega Baseball 3  
+5. LIMBO  
+6. Fortix  
+7. Wild Wild Chess  
+8. LumbearJack  
+9. Manafinder  
+10. Slow living with Princess
+
+---
+jadi Kesimpulannya adalah :
+
+Dengan menggabungkan dua pendekatan ini:
+- Content-Based Filtering memberikan rekomendasi berbasis karakteristik game (genre dan usia).
+- Collaborative Filtering menyesuaikan rekomendasi berdasarkan preferensi historis pengguna.
+
+Kombinasi keduanya memperkuat akurasi dan relevansi sistem rekomendasi yang dibangun. Pengembangan ke arah pendekatan hybrid juga memungkinkan peningkatan lebih lanjut di masa depan.
 
 ## Evaluation
 
